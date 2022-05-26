@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proxima_nova_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sigvarregular';
+    src: url('../fonts/sigvarregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --Sigvar: 'sigvarregular', serif;
+    --Proxima: "proxima-nova","Open Sans","Arial","Helvetica",sans-serif; 
+}
+
+
+.btn{
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #03a9f4;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+
+}
+#popup{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100%;
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+#popup.active{
+    visibility: visible;
+    top: 50%;
+}
+
+#popup .content{
+   
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup .content img{
+    max-width: 80px;
+}
+
+#popup .content h2{
+    font-family: var(--Sigvar);
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+#popup .content p{
+    font-family: var(--Proxima);
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+
+}
+
+#popup .content .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup .content .inputBox input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+    font-family: var(--Proxima);
+
+}
+#popup .content .inputBox input[type = "submit"]{
+    max-width: 150px;
+    background: #003566;
+    color: #fff;
+    border: none;
+
+}
+
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+.close img{
+    height: 20px;
+}

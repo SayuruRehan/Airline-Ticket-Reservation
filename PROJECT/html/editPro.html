@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../css/editPro.css">
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+    <link rel="stylesheet" href="../css/styleSubPopUp.css">
+    <script src="../js/editPro.js"></script>
+    <script src="https://kit.fontawesome.com/070ec9938c.js" crossorigin="anonymous"></script>
+        <!-- Search Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Social Media Icons -->
+    <script src="https://kit.fontawesome.com/269c22c92a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id = "body">
+     <!--header--->
+     <header>
+        <nav>
+            <a href="#" class = 'logo'>
+                <h1 id="lgo">AIRCARE</h1>
+            </a>
+
+            <ul class = 'menu'>
+                <li><a href='Home.html'>Home</a></li>
+                <li><a href='Flight Details.html'>Flight Details</a></li>
+                <li><a href='booking.html'>Bookings</a></li>
+                <li><a href='Contact Us.html'>Contact Us</a></li>
+                <li><a href='AboutUs.html'>About Us</a></li>
+            </ul>
+
+            <div class = "searchLogin">
+                <div class = "search-container">
+                    <div class = "searchbox-container">
+                        <input type = 'search' placeholder="Search" id = "searchbox">
+                    </div>
+                    <div class = "sbtn-container">
+                        <a href="#"><span  id ="sbtn" class="material-icons">search</span></a>
+                    </div>
+                </div>
+                <div class="lgn">
+                    <a href="Home.html">
+                    <button id = "loginbtn">Logout</button>
+                </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <!--header end--->
+    <div class="main">
+        <!-- Profile picture card-->
+        <div class="card">
+            <div class="card-head">Profile Picture</div>
+            <hr>
+            <div class="card-body">
+                <!-- Profile picture image-->
+                <img class="image" src="../images/person4.jpg" alt="person">
+                <!-- Profile picture upload button-->
+                <!--button class="button" type="button"> +Upload</button-->
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-image"></i>
+                <select>
+                    <option value="Upload">Upload</option>
+                    <option value="Camera">Camera</option>
+                    <option value="Gallery">Gallery</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Account details card-->
+        <div class="card">
+            <form name="form" action="../php/editpro.php" method="post">
+            <div class="card-head">Account Details</div>
+            <hr>
+            <div class="card-body">
+                <div>
+                    <label for="inputid">ID </label><br>
+                    <input id="id" type="text" name="id" placeholder="Enter your ID"/>
+                </div>
+                    <div>
+                        <label for="inputUsername">Username </label><br>
+                        <input id="username" type="text" name="username" placeholder="Enter username" required/>
+                    </div>
+
+                    
+                        <div>
+                            <label for="inputFirstName">First name</label><br>
+                            <input id="fname" type="text" name="fname" placeholder="Enter FirstName" required/>
+                        </div>
+
+                        <div>
+                            <label for="inputLastName">Last name</label><br>
+                            <input id="lname" type="text" name="lname"placeholder="Enter LastName" required/>
+                        </div>
+                    
+
+                    <!-- <div>
+                        <label for="inputLocation">Location</label><br>
+                        <input id="address" type="text" name="address"placeholder="Enter Location "/>
+                    </div> -->
+
+
+                    <div>
+                        <label for="inputEmailAddress">Email address</label><br>
+                        <input id="email" type="email" name="email"placeholder="Enter EmailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"required/>
+                    </div>
+
+
+
+                    <div class="other">
+                        <div>
+                            <label for="inputPhone">Phone number</label><br>
+                            <input id="Phone" type="text" name="Phone" placeholder="Enter Phone" pattern="[0-9]{10}" required/>
+                        </div>
+
+                        <div>submit
+                            <label for="inputBirthday">Birthday</label><br>
+                            <input id="birthday" type="date" name="birthday"placeholder="Enter Birthday" required/>
+                        </div>
+                    </div>
+                
+            </div>
+            <!-- Save changes button-->
+            <br>
+            <input class="button" type="submit" name="submit" value="Save Changes" onclick="success()"/>
+
+        </form>
+        </div>
+    </div>
+    <div class = "line"><hr></div>
+        <!--Footer-->
+        <div class = "line"><hr></div>
+        <footer>
+        <div class="ftcontainer">
+            <div class="ftrow">
+                <div class="ftcol">
+                    <h4>About Us</h4>
+                        <ul>
+                            <li><a href="AboutUs.html">About AirCare</a></li>
+                            <li><a href="#">Advertise With Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                </div>
+        
+                <div class="ftcol">
+                    <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="../html/contact.html">Help Center</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                        </ul>
+                </div>
+        
+                <div class="ftcol">
+                    <h4>Terms & Conditions</h4>
+                        <ul>
+                            <li><a href="#">Service Fees</a></li>
+                            <li><a href="#">Conditions of Carriage</a></li>
+                        </ul>
+                </div>
+            
+                <div class="ftcol">
+                    <h4>Follow Us on Social Media</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                </div>
+        
+                <div class="ftcol">
+                    <div class = "subscribe">
+                        <h4>Subscribe for Newsletter</h4>
+                            <center>
+                                <a class="subbtn" onclick="popupToggle();">Subscribe</a>
+                            </center>
+                                <div id="popup">
+                                    <div class="content">
+                                        <img src="../images/mail.png">
+                                        <h2>Subscribe to our Newsletter</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, suscipit eos. Quisquam assumenda neque, sit repellat velit quibusdam eligendi accusamus! Explicabo id dolorum ipsum nesciunt maxime corporis tenetur debitis magnam.</p> -->
+        
+                                        <form  action = "../php/subscribe.php" method = "POST">
+                                            <div class="inputBox">
+                                                <input type = "email" placeholder="Enter Your Email" name="email" required>
+                                            </div>
+                                            <div class="inputBox">
+                                                <input type = "submit" value="subscribe" class="btn">
+                                            </div>  
+                                        </form>
+                                    </div>
+                                        <a class="close" onclick="popupToggle();"><img src="../images/close.png"></a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "copyrights">
+            Created By SLIIT GROUP MLB_03.02_04 | ALL RIGHTS RESERVED
+            <br>
+            <div class="unsub">
+                <a href="#" class = "unsubtxt">Unsubscribe</a>
+            </div>
+        </div>
+        </footer>
+        
+        <script src = "../js/PopUp.js"></script>
+        
+        </div>  
+        </body>
+        </html>
