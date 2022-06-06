@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proxima_nova_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sigvarregular';
+    src: url('../fonts/sigvarregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --Sigvar: 'sigvarregular', serif;
+    --Proxima: "proxima-nova","Open Sans","Arial","Helvetica",sans-serif; 
+}
+
+body{
+    background-image:url("../images/download (2).jpg");
+    background-position:center;
+	background-size:cover;
+	font-family: var(--Proxima);
+	
+}
+
+#bookNowh1{
+  font-family: var(--Sigvar);
+  font-size:45px;
+}
+
+
+.radio{
+    margin:10px 10px;
+}
+
+.text{
+   color:white;
+   
+} 
+
+#from{
+   width:200px;
+   padding:10px;
+   margin:10px;
+} 
+
+#to{
+   width:200px;
+   padding:10px;
+   margin:10px;
+} 
+
+.Date{
+   width:140px;
+   padding:10px;
+   margin:10px;
+}
+
+.clz{
+   width:120px;
+   padding:10px;
+   margin:10px;
+   margin-left:1px;
+   color:white;
+   font-size:24px;
+}
+
+.depart{
+	margin-left:12px;
+	color:white;
+	font-size:25px;
+}
+
+.return{
+	margin-left:15px;
+	color:white;
+	font-size:25px;
+}
+  	 
+.ticket{
+	margin-left:10px;
+	color:white;
+	font-size:22px;
+}
+
+
+.person{
+   width:90px;
+   padding:8px;
+   margin:8px;
+   margin-left:1px;
+}
+
+
+.currency{
+	 margin-left:11px;
+	 color:white;
+	 font-size:22px;
+}
+
+.baggage{
+	 margin-left:11px;
+	 color:white;
+	 font-size:22px;
+}
+
+#button{
+	background-color:#3BAF9F;
+	display:block;
+	margin:6px opx opx 6px;
+	text-align:center;
+	border-radius:20px;
+	border:3px solid #366473;
+	padding:10px 15px;
+	outline:white;
+	color:black;
+	cursor:pointer;
+	transition:0.25x;
+	font-size:25px;
+	
+	
+}
+button:hover{
+	background-color:#5390F5;
+}
+	
+	
+
+
