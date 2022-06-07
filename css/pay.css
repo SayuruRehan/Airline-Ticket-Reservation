@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(255, 255, 254);
+    background-image: url(../images/flight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+}
+
+.title{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+
+}
+
+.card{
+    background-color: rgba(221, 238, 254, 0.839);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0 white;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(93, 93, 93);
+}
+.image {
+    height: 10rem;
+    border-radius: 0 !important;
+    
+}
+
+.card{
+    padding-bottom: 40px;;
+}
+.card >i{
+    float: right top;
+}
+.card .card1{
+    box-shadow: 0 0 8px 0 white;
+    background-color: rgba(221, 238, 254, 0.539);
+    padding-left: 20px;
+    text-align: left;
+    font-size: small;
+    font-weight: 800;
+    width: 480px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card1 div{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: medium;
+}   
+
+.card .card1 .row input{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 250px;
+    height: 18px;
+    position: absolute;
+    right:550px;
+
+}
+.card .card1 .add >input{
+    text-align: left;
+}
+
+label{
+    font-weight: 300;
+}
+.card .button{
+    border:1px;
+    border-radius: 15px;
+    outline: 0;
+    display: inline-block;
+    padding: 4px;
+    color: white;
+    background-color: #0061f2;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    height: 100%;
+    font-size: larger;
+    font-weight: 700;
+}
+.button:hover{
+    color: #0a1d3a;
+}
+ .button{
+    font-size: 1000px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
