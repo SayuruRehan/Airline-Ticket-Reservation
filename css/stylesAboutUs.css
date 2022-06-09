@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proxima_nova_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sigvarregular';
+    src: url('../fonts/sigvarregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    --Sigvar: 'sigvarregular', serif;
+    --Proxima: "proxima-nova","Open Sans","Arial","Helvetica",sans-serif; 
+}
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+#lgo{
+    color: white;
+}
+header{
+    font-family: var(--Sigvar);
+}
+
+body{
+    font-family: var(--Proxima);
+    background-color: whitesmoke;
+    min-height: 100vh;
+    
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    top: 0%; 
+    left: 0%;
+    background-color: #003566;
+    padding:10px;
+    line-height: 50px;
+    
+    
+}
+
+nav ul{
+    display:flex;
+    
+}
+
+nav ul li a{
+    
+    color: white;
+    font-weight: 500;
+    padding: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu a:hover{
+    color:#FFD60A;
+}
+
+
+a{
+    text-decoration: none; /*removes underline*/
+}
+
+ul{
+    list-style: none; /*removes bullet points*/
+}
+
+#loginbtn{
+    font-family: "sigvarregular", serif;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+#loginbtn:hover{
+    color:#FFD60A;
+
+}
+
+.searchLogin{
+    display: flex;
+    
+}
+#searchbox{
+    width: 240px;
+    height: 38px;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    border-style: none;
+}
+.search-container{
+    display: flex;
+}
+.searchbox-container{
+    padding: 10px;
+}
+.sbtn-container{
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 14px;
+  
+
+}
+
+#sbtn{
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+#sbtn:hover{
+    color:#FFD60A;
+
+}
+.lgn{
+    padding: 10px;
+}
+
+ /* Footer */
+
+.ftcontainer{
+    background-color: aliceblue;
+    
+}
+.ftrow{
+    display: flex;
+    justify-content: space-between;
+}
+.ftcol{
+    
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.ftcol h4{
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #003566;
+
+}
+
+
+
+.ftcol li{
+    padding-bottom: 10px;
+
+    
+}
+.ftcol li a{
+    transition: all 0.3s ease 0s;
+    color: rgb(98, 98, 98);
+    font-size: 14px;
+}
+.ftcol li a:hover{
+    color:#003566;
+}
+
+.social-links i{
+    font-size: x-large;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+
+.subbtn{
+    border-radius: 10px;
+    background-color: #003566;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+}
+.subbtn:hover{
+    background-color: #194064;
+}
+
+.subscribe{
+    padding-right: 50px;
+    
+} 
+
+.copyrights{
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.social-links i{
+    color: #020265;
+}
+
+.social-links i:hover{
+    color:#003566;
+
+}
+.line{
+    padding:10px;
+}
+hr{
+    border: none;
+    height:1px;
+    background: #dddddd;
+}
+
+.fieldNbtn{
+    display: flex;
+}
+
+.unsub{
+    padding: 10px;
+}
+
+.unsubtxt{
+    color: black;
+    text-decoration: underline;
+}
+/*---end of header footer---*/
+
+/*---About Us Styling Begins--*/
+
+.line{
+    padding:10px;
+}
+hr{
+    border: none;
+    height:1px;
+    background: #dddddd;
+}
+
+#lgo_aboutus{
+    font-family: "sigvar", serif;
+    font-size: 64px;
+    color: black;
+    
+}
+
+.lgo_aboutus{
+    padding: 20px;
+}
+
+.AboutSection{
+    display: flex;
+    padding:200px;
+}
+
+.aboutus_cont{
+    padding-left: 100px;
+}
+
+#aboutDes{
+    text-align: justify;
+}
