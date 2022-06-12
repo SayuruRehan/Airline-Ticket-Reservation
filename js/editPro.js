@@ -9,7 +9,6 @@ function success()
     // let phone = document.forms["form"]["Phone"].value;
     // let birthday = document.forms["form"]["birthday"].value;
     
-
     if(userid ==""){
 
         alert( "User ID must be filled");
@@ -23,8 +22,5 @@ function success()
     else{
         alert( "Save changes successfully");
         return false;
-    }
-
-
-    
+    }    
 }
